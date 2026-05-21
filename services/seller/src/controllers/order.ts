@@ -96,6 +96,12 @@ export const createOrder = TryCatch(async (req: AuthenticatedRequest, res) => {
     outlet.autoLocation.coordinates[0]
   );
 
+  if (distance > 10) {
+    return res.status(400).json({
+      message: "Failed: Location is too far from the outlet. We only deliver within 10 km",
+    });
+  }
+
   let subtotal = 0;
 
   const orderItems = cartItems.map((cartItem) => {
