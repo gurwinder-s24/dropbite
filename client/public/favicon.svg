@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Define a clipping box covering only the left side of the circle -->
+    <clipPath id="left-half">
+      <rect x="0" y="0" width="450" height="500" />
+    </clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="256" fill="#E23744"/>
+  <g fill="#FFFFFF">
+    <path d="M 140 210 C 140 100, 372 100, 372 210 Z"/>
+    <rect x="120" y="235" width="272" height="35" rx="17.5"/>
+    <path d="M 140 295 L 372 295 C 372 360, 140 360, 140 295 Z"/>
+  </g>
+  <circle cx="450" cy="250" r="120" fill="#E23744" clip-path="url(#left-half)"/>
+  <!-- <circle cx="395" cy="270" r="35" fill="#E23744"/> -->
+</svg>
