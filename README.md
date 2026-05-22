@@ -1,6 +1,7 @@
 <div align="center">
+<img src="client/public/favicon.svg" alt="🍔" width="40" height="40" align="center">
 
-# 🍔 DropBite
+# DropBite
 
 ### Distributed Microservices-Based Food Ordering Platform
 
